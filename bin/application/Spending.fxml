@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="559.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SpendingController">
+   <children>
+      <AnchorPane prefHeight="660.0" prefWidth="500.0">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="210.0" layoutY="276.0" prefHeight="286.0" prefWidth="500.0" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="280.0">
+               <children>
+                  <GridPane alignment="CENTER" hgap="15.0" vgap="15.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="OK" mnemonicParsing="false" onAction="#OK" onKeyPressed="#keyPressed" prefHeight="135.0" prefWidth="110.0" style="-fx-background-radius: 10; -fx-background-color: #FAEBD7;" text="OK" textFill="#35afd1" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font></Button>
+                        <Button fx:id="Back" mnemonicParsing="false" onAction="#back" onKeyPressed="#keyPressed" prefHeight="55.0" prefWidth="110.0" style="-fx-background-radius: 10; -fx-background-color: #FAEBD7;" text="&lt;-" textFill="#cf3715" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font></Button>
+                        <Button fx:id="AC" mnemonicParsing="false" onAction="#AC" onKeyPressed="#keyPressed" prefHeight="55.0" prefWidth="110.0" style="-fx-background-radius: 10; -fx-background-color: #FAEBD7;" text="AC" textFill="#6fa62b" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font></Button>
+                        <Button fx:id="button3" mnemonicParsing="false" onAction="#num" onKeyPressed="#keyPressed" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 10; -fx-background-color: #FAEBD7;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font></Button>
+                        <Button fx:id="button6" mnemonicParsing="false" onAction="#num" onKeyPressed="#keyPressed" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 10; -fx-background-color: #FAEBD7;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font></Button>
+                        <Button fx:id="button9" mnemonicParsing="false" onAction="#num" onKeyPressed="#keyPressed" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 10; -fx-background-color: #FAEBD7;" text="9" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font></Button>
+                        <Button fx:id="button00" alignment="CENTER" mnemonicParsing="false" onAction="#method00" onKeyPressed="#keyPressed" prefHeight="55.0" prefWidth="135.0" style="-fx-background-radius: 10; -fx-background-color: #FAEBD7;" text="00" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font></Button>
+                        <Button fx:id="button2" mnemonicParsing="false" onAction="#num" onKeyPressed="#keyPressed" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 10; -fx-background-color: #FAEBD7;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font></Button>
+                        <Button fx:id="button5" mnemonicParsing="false" onAction="#num" onKeyPressed="#keyPressed" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 10; -fx-background-color: #FAEBD7;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font></Button>
+                        <Button fx:id="button8" mnemonicParsing="false" onAction="#num" onKeyPressed="#keyPressed" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 10; -fx-background-color: #FAEBD7;" text="8" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font></Button>
+                        <Button fx:id="button0" mnemonicParsing="false" onAction="#num" onKeyPressed="#keyPressed" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 10; -fx-background-color: #FAEBD7;" text="0" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font></Button>
+                        <Button fx:id="button1" mnemonicParsing="false" onAction="#num" onKeyPressed="#keyPressed" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 10; -fx-background-color: #FAEBD7;" text="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font></Button>
+                        <Button fx:id="button4" mnemonicParsing="false" onAction="#num" onKeyPressed="#keyPressed" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 10; -fx-background-color: #FAEBD7;" text="4" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font></Button>
+                        <Button fx:id="button7" mnemonicParsing="false" onAction="#num" onKeyPressed="#keyPressed" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 10; -fx-background-color: #FAEBD7;" text="7">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font></Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <Button fx:id="recordData" layoutX="107.0" layoutY="585.0" mnemonicParsing="false" onAction="#pressToRecordTheData" prefHeight="44.0" prefWidth="290.0" style="-fx-background-radius: 25; -fx-background-color: #FFA500;" text="Press To Record The Data" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="switchToGraphScene" layoutX="361.0" layoutY="649.0" mnemonicParsing="false" onAction="#switchToGraphScene" prefHeight="26.0" prefWidth="127.0" style="-fx-background-radius: 5; -fx-background-color: #34282C;" text="Graph anaylsis" textFill="#ffc1c1" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="21.0">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <VBox layoutX="1.0" layoutY="98.0" prefHeight="174.0" prefWidth="507.0" AnchorPane.bottomAnchor="422.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="98.0">
+               <children>
+                  <GridPane alignment="CENTER" hgap="10.0" prefWidth="507.0" vgap="15.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="38.39999999999999" minHeight="-Infinity" prefHeight="38.39999999999999" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="0.0" minHeight="-Infinity" prefHeight="0.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="categoryL" alignment="CENTER" prefHeight="38.0" prefWidth="70.0" style="-fx-background-radius: 10; -fx-background-color: #82CAFF;" text="Category" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="moneyL" alignment="CENTER" prefHeight="38.0" prefWidth="70.0" style="-fx-background-radius: 10; -fx-background-color: #82CAFF;" text="Money" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="date" alignment="CENTER" prefHeight="38.0" prefWidth="300.0" style="-fx-background-color: #FFFFC2;" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Arial Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="money" prefHeight="38.0" prefWidth="300.0" style="-fx-background-color: #FFFFC2;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Arial Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="dateL" alignment="CENTER" prefHeight="38.0" prefWidth="70.0" style="-fx-background-radius: 10; -fx-background-color: #82CAFF;" text="Date">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="myDatePicker" onAction="#getDate" prefHeight="38.0" prefWidth="115.0" promptText="Select a date" style="-fx-background-color: #AFDCEC;" GridPane.columnIndex="2" />
+                        <ChoiceBox fx:id="spendingChoiceBox" prefHeight="38.0" prefWidth="115.0" style="-fx-background-color: #CFECEC;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Label fx:id="NTD" alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="115.0" style="-fx-background-radius: 5; -fx-background-color: #DBF9DB;" text="NTD$ " GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Arial" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="category" alignment="CENTER" prefHeight="38.0" prefWidth="300.0" style="-fx-background-color: #FFFFC2;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <Label fx:id="title" alignment="CENTER" layoutX="149.0" layoutY="29.0" prefHeight="40.0" prefWidth="210.0" style="-fx-background-color: #FFA500; -fx-background-radius: 5;" text="2021 Spending" AnchorPane.bottomAnchor="620.6" AnchorPane.topAnchor="29.0">
+               <font>
+                  <Font name="Arial Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="switchToIncomeScene" layoutX="21.0" layoutY="649.0" mnemonicParsing="false" onAction="#switchToIncomeScene" prefHeight="26.0" prefWidth="127.0" style="-fx-background-radius: 5; -fx-background-color: #34282C;" text="Income" textFill="#ffc1c1" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="359.8" AnchorPane.topAnchor="649.2">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

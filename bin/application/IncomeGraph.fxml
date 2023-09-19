@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.IncomeGraphController">
+   <children>
+      <AnchorPane prefHeight="720.0" prefWidth="800.0">
+         <children>
+            <Label fx:id="title" alignment="CENTER" layoutX="294.0" layoutY="29.0" prefHeight="40.0" prefWidth="210.0" style="-fx-background-radius: 5; -fx-background-color: #FFA500;" text="Income Graph" AnchorPane.topAnchor="29.0">
+               <font>
+                  <Font name="Arial Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <VBox layoutY="90.0" prefHeight="98.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <GridPane alignment="CENTER" hgap="30.0" prefWidth="800.0" vgap="15.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="Jan" mnemonicParsing="false" onAction="#switchToJanSpending" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 15; -fx-background-color: #FAAFBA;" text="January" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Dec" mnemonicParsing="false" onAction="#switchToDecSpending" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 15; -fx-background-color: #FAAFBA;" text="December" textFill="#fffefe" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Aug" mnemonicParsing="false" onAction="#switchToAugSpending" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 15; -fx-background-color: #FAAFBA;" text="August" textFill="#fffefe" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Apr" mnemonicParsing="false" onAction="#switchToAprSpending" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 15; -fx-background-color: #FAAFBA;" text="April" textFill="#fffefe" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Nov" mnemonicParsing="false" onAction="#switchToNovSpending" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 15; -fx-background-color: #FAAFBA;" text="November" textFill="#fffefe" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Jul" mnemonicParsing="false" onAction="#switchToJulSpending" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 15; -fx-background-color: #FAAFBA;" text="July" textFill="#fffefe" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Mar" mnemonicParsing="false" onAction="#switchToMarSpending" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 15; -fx-background-color: #FAAFBA;" text="March" textFill="#fffefe" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Oct" mnemonicParsing="false" onAction="#switchToOctSpending" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 15; -fx-background-color: #FAAFBA;" text="October" textFill="#fffefe" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Jun" mnemonicParsing="false" onAction="#switchToJunSpending" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 15; -fx-background-color: #FAAFBA;" text="June" textFill="#fffefe" GridPane.columnIndex="5">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Feb" mnemonicParsing="false" onAction="#switchToFebSpending" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 15; -fx-background-color: #FAAFBA;" text="February" textFill="#fffefe" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Sep" mnemonicParsing="false" onAction="#switchToSepSpending" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 15; -fx-background-color: #FAAFBA;" text="September" textFill="#fffefe" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="May" mnemonicParsing="false" onAction="#switchToMaySpending" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 15; -fx-background-color: #FAAFBA;" text="May" textFill="#fffefe" GridPane.columnIndex="4">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <PieChart fx:id="pieChartT" layoutX="125.0" layoutY="235.0" prefHeight="417.0" prefWidth="556.0" />
+            <Button fx:id="switchToIncomeScene" layoutX="54.0" layoutY="669.0" mnemonicParsing="false" onAction="#switchToIncomeScene" prefHeight="26.0" prefWidth="127.0" style="-fx-background-radius: 5; -fx-background-color: #34282C;" text="Income" textFill="#ffc1c1" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="25.0">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="switchToSpendingGraphScene" layoutX="651.0" layoutY="675.0" mnemonicParsing="false" onAction="#switchToSpendingGraphScene" prefHeight="26.0" prefWidth="127.0" style="-fx-background-radius: 5; -fx-background-color: #34282C;" text="Spending Graph" textFill="#ffc1c1" AnchorPane.bottomAnchor="18.600000000000023" AnchorPane.rightAnchor="25.0">
+               <font>
+                  <Font name="Arial Bold Italic" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="wholeYearIncomeDistribution" alignment="CENTER" layoutX="228.0" layoutY="204.0" prefHeight="30.0" prefWidth="350.0" style="-fx-background-radius: 5; -fx-background-color: #6960EC;" text="Whole Year Income Distribution" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
